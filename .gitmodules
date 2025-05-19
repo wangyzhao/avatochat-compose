@@ -1,0 +1,4 @@
+[submodule "modules/avatochat-server"]
+	path = modules/avatochat-server
+	url = git@github.com:AvatoLabs/avatochat-server.git
+	branch = main
