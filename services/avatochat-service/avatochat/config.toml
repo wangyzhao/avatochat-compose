@@ -34,7 +34,7 @@
 #
 # example: "conduwuit.woof"
 #
-server_name = "test.im.avato.cc"
+server_name = "test1.im.avato.cc"
 
 # The default address (IPv4 or IPv6) conduwuit will listen on.
 #
@@ -1500,9 +1500,9 @@ turn_uris = ["turn:47.239.250.75?transport=tcp"]
 #
 # example: "https://matrix.example.com"
 #
-client = "https://test.im.avato.cc"
+client = "https://test1.im.avato.cc"
 
-livekit_service_url = ["https://test.im.avato.cc/livekit/jwt"]
+livekit_service_url = ["https://test1.im.avato.cc/livekit/jwt"]
 
 # The server base domain of the URL with a specific port that the server
 # well-known file will serve. This should contain a port at the end, and

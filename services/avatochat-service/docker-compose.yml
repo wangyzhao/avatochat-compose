@@ -3,7 +3,7 @@ services:
     image: ghcr.io/element-hq/lk-jwt-service:latest-ci
     environment:
       - LIVEKIT_JWT_PORT=8009
-      - LIVEKIT_URL=wss://test.im.avato.cc/livekit/sfu
+      - LIVEKIT_URL=wss://test1.im.avato.cc/livekit/sfu
       - LIVEKIT_KEY=devkey
       - LIVEKIT_SECRET=secret
     deploy:
@@ -38,8 +38,8 @@ services:
     image: nginx:latest
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:Z
-      - ../certs/crt.pem:/opt/nginx/certs/crt.pem:Z
-      - ../certs/key.pem:/opt/nginx/certs/key.pem:Z
+      - ../certs/crt.pem:/opt/nginx/crt.pem:Z
+      - ../certs/key.pem:/opt/nginx/key.pem:Z
       - ./nginx/web:/opt/nginx/web
     depends_on:
       - avatochat-server
